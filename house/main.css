@@ -1,0 +1,92 @@
+
+h1 {
+    text-align: center;
+}
+
+path {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+svg {
+    height: auto;
+    width: 100%;
+}
+
+.background {
+    fill: #C5E6F7;
+}
+.container {
+    border: 0.5em solid #32302A;
+}
+.clouds {
+    animation: flyby 30s infinite;
+    transform-origin: right;
+}
+
+.flower_center {
+    animation: spin 3s infinite;
+    transform-origin: center;
+}
+
+.peddels {
+    fill: #fff;
+    stroke:black;
+    stroke-width: 0.5;
+}
+
+.roof {
+    fill: #E04E27;
+ }
+
+.smoke {
+    animation: shrink 2s infinite;
+    transform-origin: top;
+}
+
+.smoke1 {
+    animation: slowShrink 3s infinite;
+    transform-origin: top;
+}
+
+.window rect {
+    fill: #E1F9F9;
+    stroke: #D8D6D6;
+}
+.window line {
+    stroke: #E04E27;
+    stroke-width: 4px;
+}
+
+#knob {
+    animation: grow 2s infinite;
+    transform-origin: center;
+}
+
+@keyframes flyby {
+    0%{transform: translate(399,131);}
+    50%{transform: translate(170,131);}
+    100%{transform: translate(-100,131);}
+}
+
+@keyframes spin {
+    0%,100% {transform: rotate(0% 228px 267px);}
+    50%{transform:rotate(360% 228px 267px);}
+}
+
+@keyframes grow {
+    0%,100% {transform: scale(1);}
+    50%{transform:scale(0.5);}
+}
+
+@keyframes slowShrink {
+    0% {transform: scale(1);}
+    50%{transform:scale(0.5);}
+    100%{transform: scale(0);}
+}
+@keyframes shrink {
+    0% {transform: scale(1);}
+    50%{transform:scale(0.5);}
+    100%{transform: scale(0);}
+}

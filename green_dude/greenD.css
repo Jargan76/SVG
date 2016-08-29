@@ -1,0 +1,165 @@
+body {
+    padding-left: 25px;
+}
+
+#dudeContainer {
+    margin:10%;
+}
+
+#dudeContainer #gDude {
+    position: relative;
+    width: 10em;
+    height: 12em;
+    float: left;
+}
+#dudeContainer #gDude #body {
+    width: 8em;
+    height: 13em;
+    background-color: #247522;
+    border-radius: 5em 5em 0 0;
+    z-index: 150;
+    position: relative;
+}
+
+#dudeContainer #gDude #feet::before {
+    content: '';
+    width: 2em;
+    height: 2em;
+    background-color: #247522;
+    border-radius: 0 0 1em 1em;
+    position: absolute;
+    top: 12em;
+}
+
+#dudeContainer #gDude #feet::after {
+    content: '';
+    width: 2em;
+    height: 2em;
+    background-color: #247522;
+    border-radius: 0 0 1em 1em;
+    position: absolute;
+    top: 12em;
+    left: 6em;
+}
+
+#dudeContainer #gDude #eyes::before {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #fff;
+    border-radius: 1em;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+}
+
+#dudeContainer #gDude #eyes::after {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #fff;
+    border-radius: 1em;
+    position: absolute;
+    top: 2em;
+    left: 4.5em;
+}
+
+#dudeContainer #gDude #pupils::before {
+    content: '';
+    width: 0.75em;
+    height: 1.5em;
+    background-color: #000;
+    border-radius: 0 1em 1em 0;
+    position: absolute;
+    top: 2em;
+    left: 5.25em;
+    animation: spin 3s infinite ;
+    transform-origin: left;
+}
+
+#dudeContainer #gDude #pupils::after {
+    content: '';
+    width: 0.75em;
+    height: 1.5em;
+    background-color: #000;
+    border-radius: 0 1em 1em 0;
+    position: absolute;
+    top: 2em;
+    left: 1.75em;
+    animation: spin 3s infinite;
+    transform-origin: right;
+}
+
+#dudeContainer #gDude #nostrils::before {
+    content: '';
+    width: 0.25em;
+    height: 0.25em;
+    background-color: #000;
+    border-radius: 1em;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+}
+
+#dudeContainer #gDude #nostrils::after {
+    content: '';
+    width: 0.25em;
+    height: 0.25em;
+    background-color: #000;
+    border-radius: 1em;
+    position: absolute;
+    top: 3em;
+    left: 3.75em;
+}
+
+#dudeContainer #gDude #mouth::before {
+    content: '';
+    width: 1.25em;
+    height: 0.75em;
+    background-color: #942e58;
+    border-radius: 0 0 3em 3em;
+    position: absolute;
+    top: 3.75em;
+    left: 2.85em;
+}
+
+#dudeContainer #gDude #belly {
+    content: '';
+    width: 5.5em;
+    height: 5.5em;
+    background-color: #f8e393;
+    border-radius: 2em 2em 0 2em;
+    position: absolute;
+    top: 7.5em;
+    left: 0.5em;
+    z-index: 10;
+}
+
+#dudeContainer #gDude #arms::before {
+    content: '';
+    width: 2em;
+    height: 2em;
+    background-color: #247522;
+    border-radius: 2em 0 0 2em;
+    position: absolute;
+    top: 5.75em;
+    left: -1.5em;
+    z-index: 10;
+}
+
+#dudeContainer #gDude #arms::after {
+    content: '';
+    width: 2em;
+    height: 2em;
+    background-color: #247522;
+    border-radius: 0 2em 2em 0;
+    position: absolute;
+    top: 5.75em;
+    left: 7.75em;
+    z-index: 10;
+}
+dudeContainer
+@keyframes spin {
+    from {transform: rotate(0% );}
+    to{transform: rotate(180% );}
+}
